@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-image: url(./background.jpg);
+  background-size: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 100px;
+  text-shadow: 4px 4px black;
+}
+
+input {
+  width: 110%;
+  height: 4vh;
+  border-radius: 5px;
+}
+
+h3 {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+span {
+  color: red;
+}
+
+button {
+  width: 10%;
+  margin: 3vh;
+  height: 5%;
+}
