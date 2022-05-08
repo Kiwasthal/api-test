@@ -1,7 +1,10 @@
+'use strict';
+
 const img = document.querySelector('img');
 const errorDisplay = document.querySelector('span');
 const input = document.querySelector('input');
 const searchBtn = document.querySelector('button');
+
 fetch(
   'https://api.giphy.com/v1/gifs/translate?api_key=TucjQQqfWk53eCLWY4cidBL0mlGL8f6s&s=cats',
   {
@@ -30,6 +33,7 @@ let giphDisplay = () => {
     })
     .catch(reject => {
       errorDisplay.textContent = 'Not found';
+      throw Error(reject);
     });
 };
 

@@ -34,13 +34,37 @@ h3 {
   color: white;
   text-shadow: 2px 2px black;
 }
+img {
+  height: 40vh;
+}
 
 span {
   color: red;
 }
 
 button {
-  width: 10%;
+  width: 15%;
   margin: 3vh;
+  padding: 0.3rem;
   height: 5%;
+  border-radius: 20px;
+  border: 2px solid black;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: rgb(234, 220, 140);
+  color: #fff;
+  text-shadow: 2px 0px black;
+  transition: transform 100ms ease-in;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(221, 221, 221);
+  color: black;
+  text-shadow: 0px 0px black;
+}
+
+button:active {
+  transform: scale(1.1);
 }
