@@ -25,6 +25,12 @@ let giphDisplay = () => {
       return response.json();
     })
     .then(response => {
+      errorDisplay.textContent = '';
       img.src = response.data.images.original.url;
+    })
+    .catch(reject => {
+      errorDisplay.textContent = 'Not found';
     });
 };
+
+searchBtn.addEventListener('click', giphDisplay);
